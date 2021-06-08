@@ -18,7 +18,12 @@ Do the following:
    HINT: no function required
 */
 
-
+const votingAge = 18;
+if(votingAge >= 18) {
+  console.log("Task 1a:", "true");
+} else {
+  console.log("Task 1a:", "false");
+}
 
 /*
 Task 1b - Values
@@ -33,8 +38,6 @@ Do the following:
 
 
 
-
-
 /*
 Task 1c - Convert Strings to Numbers
 
@@ -46,8 +49,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+const year = "1999";
+console.log("Task 1c:", Number(year));
 
 /*
 Task 1d - Multiply
@@ -58,11 +61,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
-
-
+function multiply(a, b) {
+  return a * b
+}
+console.log("Task 1d:", multiply(10, 15));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -127,7 +129,7 @@ function hungryDog(weight, age){
     }
   }
 
-  console.log("Task 3", hungryDog(15, 1));
+  console.log("Task 3:", hungryDog(15, 1));
 
 
 
@@ -165,7 +167,7 @@ function game(user, computer){
 /*
 Using the miles function below do the following:
   1. Receive a number of kilometers
-  2. Convert the number of kiolmeters received to miles
+  2. Convert the number of kilometers received to miles
   3. Return the number of miles
 */
 
