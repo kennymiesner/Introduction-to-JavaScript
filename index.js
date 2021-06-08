@@ -168,9 +168,25 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-  
-}
+function game(user, computer) {
+  if(user === "rock" && computer == "scissors") { 
+    return 'you win!';
+  } else if(user === "scissors" && computer === "paper") {
+    return 'you win!';
+  } else if(user === "paper" && computer === "rock") {
+    return 'you win!';
+  } else if(user === "scissors" && computer === "rock") {
+    return 'you lose!';
+  } else if(user === "paper" && computer === "scissors") {
+    return 'you lose!';
+  } else if(user === "rock" && computer === "paper"){
+    return 'you lose!';
+  } else {
+    return "it's a tie";
+  }
+} 
+console.log(`Task 4: ${game(0.5)}`)
+
   
   
 
@@ -217,9 +233,12 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong( ){
-     
+function annoyingSong(number){
+  for(let i = number; i > 0; i--){
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`;
   }
+}
+console.log(`Task 6: ${annoyingSong(99)}`)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
