@@ -143,8 +143,7 @@ function hungryDog(weight, age){
       return "Please try again."
     }
   }
-
-  console.log("Task 3:", hungryDog(15, 1));
+  console.log(`Task 3: ${hungryDog(15, 1)} pounds`)
 
 
 
@@ -189,7 +188,7 @@ Using the miles function below do the following:
 function miles(km){
   return km * 0.621371;
 }
-console.log("Task 5a:", miles(10));
+console.log(`Task 5a: ${miles(10)} miles`)
 
 
 
@@ -204,7 +203,7 @@ Using the feet function below do the following:
 function feet(cm){
   return cm / 30.48;
 }
-console.log("Task 5b:", feet(60));
+console.log(`Task 5b: ${feet(30.48)} ft`)
  
 
 
@@ -218,8 +217,8 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong( ){
+     
   }
 
 
@@ -237,10 +236,21 @@ Using the grade function below do the following:
    60-69 should return 'you got a D'
    below should return 'you got an F'
 */
-  
-function grade(/*Your Code here */){
-  /*Your Code here */
+
+function grade(score){
+  if (score >=90){
+    return "you got an A";
+  } else if (score >=80) {
+    return "you got a B";
+  } else if (score >=70) {
+    return "you got a C";
+  } else if (score >=60) {
+    return "you got a D";
+  } else {
+    return "you got an F";
   }
+}
+console.log(`Task 7: ${grade(100)}`);
   
   
 
