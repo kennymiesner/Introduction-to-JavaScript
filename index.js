@@ -20,9 +20,9 @@ Do the following:
 
 const votingAge = 18;
 if(votingAge >= 18) {
-  console.log("Task 1a:", "true");
+  console.log("Task 1a:", true);
 } else {
-  console.log("Task 1a:", "false");
+  console.log("Task 1a:", false);
 }
 
 /*
@@ -82,11 +82,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(humanYears) {
+  return humanYears * 7;
 }
-
-
+console.log("Task 2:", dogYears(10));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -160,8 +159,16 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+Math.random();
+
 function game(user, computer){
-    /*add your code here*/
+  if(user > computer) {
+    return "you win!";
+  } else if(user < computer) {
+    return "you lose!";
+  } else if(user = computer) {
+    return "it's a tie";
+  }
 }
   
   
