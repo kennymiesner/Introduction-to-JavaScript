@@ -36,7 +36,13 @@ Do the following:
    HINT: no function required
 */
 
+let num1 = 5;
+let num2 = 20;
 
+if(num1 < num2) {
+  num1 += num2;
+} 
+console.log("Task 1b:", num1);
 
 /*
 Task 1c - Convert Strings to Numbers
